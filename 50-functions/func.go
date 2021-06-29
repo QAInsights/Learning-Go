@@ -39,7 +39,7 @@ func main() {
 	// Anonymous Functions
 
 		func (){
-			fmt.Println("From Anonymous func: => Hello there!")
+			fmt.Println("From Anonymous func: => Hello there!!!")
 		}()
 
 		for z := 0; z < 5; z++ {
