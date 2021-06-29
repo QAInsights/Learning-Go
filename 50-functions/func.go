@@ -59,7 +59,7 @@ func main() {
 
 func divide(a, b float64) (float64, error) {
 	if b == 0.0 {
-		return b, fmt.Errorf("Cannot divide by zero")
+		return b, fmt.Errorf("cannot divide by zero")
 	}
 	return a / b, nil
 }
@@ -95,7 +95,7 @@ func twoSum(a, b int){
 
 }
 
-func sayMoreHello(msg, name string, age int){ //Syntatic Sugar
+func sayMoreHello(msg, name string, age int){ //Syntactic Sugar
 	fmt.Println(msg, name, age)
 }
 func sayHello(msg string, age int){
