@@ -10,6 +10,8 @@ var c int = 0
 var m = sync.RWMutex{}
 
 func main() {
+
+	// To test race conditions, send `go run .\90-mutex\mutex.go -race`
 	fmt.Println("Mutex demo")
 
 	for j := 0; j<10; j++{

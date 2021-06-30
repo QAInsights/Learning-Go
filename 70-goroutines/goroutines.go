@@ -7,9 +7,12 @@ import (
 )
 
 func main() {
-	fmt.Println("Threads", runtime.GOMAXPROCS(-1)) // All cores e.g. 4
+	// -1 will set the value and doesn't change or go back
+	// Now using 1 thread, setting the threads to higher value will cause overhead
+
+	fmt.Println("Threads", runtime.GOMAXPROCS(-1)) // All threads e.g. 4
 	runtime.GOMAXPROCS(1)
-	fmt.Println("Threads",runtime.GOMAXPROCS(1)) // Now using 1 core
+	fmt.Println("Threads",runtime.GOMAXPROCS(-1))
 
 	fmt.Println("Starting")
 	go sayHello()
